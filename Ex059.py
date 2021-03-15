@@ -1,5 +1,6 @@
 oper = 0
 while oper == 0:
+    print('=-=' * 15)
     val1 = float(input('Digite o 1º valor: '))
     val2 = float(input('Digite o 2º valor: '))
     res = 0
@@ -20,18 +21,18 @@ while oper == 0:
     while oper in range(1, 5):
         if oper == 1:
             res = val1 + val2
-            print('A soma é {:.2f}.'.format(res))
+            print('A soma entre {} e {} é {:.2f}.'.format(val1, val2, res))
             oper = 0
         elif oper == 2:
             res = val1 * val2
-            print('A multiplicação é {:.2f}'.format(res))
+            print('A multiplicação entre {} e {} é {:.2f}'.format(val1, val2, res))
             oper = 0
         elif oper == 3:
             if val1 > val2:
-                print('O maior valor é {}'.format(val1))
+                print('O maior valor entre {} e {} é {}'.format(val1, val2, val1))
                 oper = 0
             elif val2 > val1:
-                print('O maior valor é {}'. format(val2))
+                print('O maior valor entre {} e {} é {}'. format(val1, val2, val2))
                 oper = 0
             else:
                 print('Os dois valores são iguais')
