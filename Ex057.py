@@ -7,6 +7,3 @@ else:
     sexo = 'MASCULINO'
 print('Sexo {} registrado com sucesso.'.format(sexo))
 
-
-'''Anotaçoes
-Verificar 'or' em while'''
