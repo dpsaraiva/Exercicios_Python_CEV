@@ -1,11 +1,10 @@
-num = cont = soma = 0
-while num !=999:
+cont = soma = 0
+while True:
     num = int(input('Digite um número: '))
     if num == 999:
         break
-    else:
-        cont += 1
-        soma += num
+    cont += 1
+    soma += num
 if cont == 0:
     print('Nenhum número foi digitado')
 elif cont == 1:

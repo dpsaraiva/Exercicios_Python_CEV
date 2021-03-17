@@ -1,22 +1,25 @@
 from random import randint
 cont = 0
-res = ''
-while res != 'PERDEU':
+while True:
     comp = randint(1, 10)
-    num = int(input('Diga um valor: '))
-    escolha = str(input('Par ou Ímpar? [P/I] ')).upper().strip()[0]
-    soma = comp + num
+    num = ''
+    while num.isnumeric() == False:
+        num = input('Escolha um número: ')
+    escolha = 'a'
+    while escolha not in 'IP':
+        escolha = str(input('Par ou Ímpar? [P/I] ')).upper().strip()[0]
+    soma = comp + int(num)
     if soma % 2 == 0 and escolha == 'P':
-        print(f'O computador jogou {comp} e você {num}. Total de {soma} DEU PAR ')
+        print(f'O computador jogou {comp} e você {num}. Total {soma} DEU PAR ')
     elif soma % 2 == 0 and escolha == 'I':
-        print(f'O computador jogou {comp} e você {num}. Total de {soma} DEU PAR ')
+        print(f'O computador jogou {comp} e você {num}. Total {soma} DEU PAR ')
         break
     elif soma % 2 != 0 and escolha == 'P':
-        print(f'O computador jogou {comp} e você {num}. Total de {soma} DEU ÍMPAR ')
+        print(f'O computador jogou {comp} e você {num}. Total {soma} DEU ÍMPAR ')
         break
     else:
-        print(f'O computador jogou {comp} e você {num}. Total de {soma} DEU ÍMPAR ')
-    print('Você VENCEU')
+        print(f'O computador jogou {comp} e você {num}. Total {soma} DEU ÍMPAR ')
+    print('Você VENCEU!!!')
     print('Vamos jogar novamente...')
     print('=-' * 20)
     cont += 1
