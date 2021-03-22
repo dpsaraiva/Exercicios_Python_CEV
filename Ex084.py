@@ -17,16 +17,14 @@ for i in range(0, len(cadastro), 2):
             pesados.append(cadastro[i])
         else:
             maior = cadastro[i + 1]
-            del(pesados)
-            pesados = []
+            pesados.clear()
             pesados.append(cadastro[i])
     elif cadastro[i + 1] <= menor:
         if menor == cadastro[i + 1]:
             leves.append(cadastro[i])
         else:
             menor = cadastro[i + 1]
-            del(leves)
-            leves = []
+            leves.clear()
             leves.append(cadastro[i])
 print('=-' * 40)
 print(f'Foram cadastradas {cont} pessoas')
