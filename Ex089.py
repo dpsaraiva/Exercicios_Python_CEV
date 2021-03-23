@@ -1,22 +1,15 @@
 alunos = []
-nome = list()
-notas = []
-media = []
 while True:
-    nome.append(input('Nome: '))
-    notas.append(float(input('Nota 1: ')))
-    notas.append(float(input('Nota 2: ')))
-    media.append((notas[0]+notas[1])/2)
-    nome.append(notas[:])
-    alunos.append(nome[:])
-    nome.clear()
-    notas.clear()
+    nome = str(input('Nome: '))
+    notas1 = float(input('Nota 1: '))
+    notas2 = float(input('Nota 2: '))
+    media = (notas1+notas2)/2
+    alunos.append([nome, [notas1, notas2], media])
     cont = input('Deseja continuar? S/N ').upper().strip()[0]
     if cont in 'Nn':
         break
 for i in range(0, len(alunos)):
-    print(f'{i + 1:<5} {alunos[i][0]:^15} {media[i]:>4.1f}')
-
+    print(f'{i + 1:<5} {alunos[i][0]:^15} {alunos[i][2]:>4.1f}')
 while True:
     aluno = int(input('Mostrar as notas de qual aluno? (999 para sair) '))
     if aluno == 999:
