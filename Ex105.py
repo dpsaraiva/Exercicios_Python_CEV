@@ -6,35 +6,23 @@ def notas(*num, sit=False):
     :return: dicionário com várias informações sobre a situação da turma
     '''
 
-
-    media = soma = maior = menor = total = 0
     aluno = {}
     situacao = ''
-    for i in num:
-        total += 1
-        if total == 1:
-            maior = i
-            menor = maior
-        else:
-            if maior < i:
-                maior = i
-            if menor > i:
-                menor = i
-        soma += i
-    media = soma / total
-    aluno['total'] = total
-    aluno['maior'] = maior
-    aluno['menor'] = menor
-    aluno['média'] = media
+    aluno['total'] = len(num)
+    aluno['maior'] = max(num)
+    aluno['menor'] = min(num)
+    aluno['média'] = sum(num) / len(num)
     if sit == True:
-        if media < 5:
-            situacao = 'RUIM'
-        elif media < 7:
-            situacao = 'RAZOÁVEL'
+        if aluno['média'] < 5:
+            aluno['situação'] = 'RUIM'
+        elif aluno['média'] < 7:
+            aluno['situação'] = 'RAZOÁVEL'
         else:
-            situacao = 'BOA'
-        aluno['situação'] = situacao
-    print(aluno)
+            aluno['situação'] = 'BOA'
+    return aluno
 
+
+#Programa Principal
 resp = notas(2.7, 5, 7.4, 6.2, 5, sit=True)
+print(resp)
 help(notas)
