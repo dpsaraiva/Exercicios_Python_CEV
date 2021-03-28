@@ -1,7 +1,5 @@
-from time import sleep
-
-
 def maior(* num):
+    from time import sleep
     print('=-' * 30)
     print('Analisando os valores passados...')
     sleep(1)
