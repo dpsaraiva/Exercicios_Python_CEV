@@ -1,3 +1,5 @@
+#Desafio: Faça um programa que leia um número qualquer e mostre na tela a sua tabuada.
+
 n = int(input('Digite um número inteiro: '))
 print('Sua tabuada é:')
 print(n,'x 0 = {}'.format(n*0))
