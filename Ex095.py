@@ -1,3 +1,5 @@
+#Desafio: Aprimore o Desafio 093 para que ele funcione com varios jogadores, incluindo um sistema de visualização de detalhes de aproveitamento de cada jogador.
+
 ficha = {}
 gols = []
 geral = []
