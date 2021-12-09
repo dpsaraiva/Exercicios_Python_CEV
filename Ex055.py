@@ -1,3 +1,6 @@
+#Desafio: Faça um programa que leia o peso de 5 pessoas.
+# No final, mostre qual foi o maior e o menor peso lido. 
+
 maior = 0
 menor = 0
 for i in range(1, 6):
