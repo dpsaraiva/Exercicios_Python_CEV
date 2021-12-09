@@ -1,3 +1,10 @@
+#Desafio: A Confederação Nacional de Natação precisa de um programa que leia o ano de nascimento de um atleta e mostre sua categoria, de acordo com a idade:
+# Até 9 anos: MIRIM
+# Ate 14 anos: INFANTIL
+# Ate 19 anos: JÚNIOR
+# Ate 20 anos : SÊNIOR
+# ACIMA: MASTER
+
 from datetime import date
 ano_atual = date.today().year
 ano = int(input('Informe seu ano de nascimento com 4 digitos: '))
