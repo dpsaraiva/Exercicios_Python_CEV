@@ -1,3 +1,6 @@
+#Desafio: Melhore o desafio 61, perguntando para o usuário se ele quer mostrar mais alguns termos.
+# O programa encerra quando ele diser que quer mostrar 0 termos. 
+
 prim_termo = int(input('Digite o 1º termo: '))
 razao = int(input('Qual a razão dessa PA? '))
 cont = 1
