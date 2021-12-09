@@ -1,3 +1,5 @@
+#Desafio: Crie um codigo em python que teste se o site pudim está acessivel pelo computador usado.
+
 import requests
 
 try:
