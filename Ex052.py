@@ -1,3 +1,5 @@
+#Desafio: Faça um programa que leia um número e diga se ele é primo ou não.
+
 num = int(input('Digite um número inteiro: '))
 primo = 0
 if num < 2:
