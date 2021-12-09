@@ -1,3 +1,8 @@
+#Desafio: Crie um programa que leia o nome e o preço de vários produtos. O programa deverá perguntar se o usuario vai continuar. No final, mostre:
+# A) Qual é o total gasto na compra.
+# B) Quantos produtos custam mais de 1000 reais.
+# C) Qual é o nome do prodito mais barato.
+
 total = cont = menor = item = 0
 nome = ''
 while True:
