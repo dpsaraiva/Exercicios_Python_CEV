@@ -1,3 +1,5 @@
+#Desafio: Adapte o código do desafio 107, criando uma função chamada moeda() que consiga mostrar os valores como um valor monetário formatado.
+
 import moeda
 
 p = float(input('Digite o preço: R$ '))
