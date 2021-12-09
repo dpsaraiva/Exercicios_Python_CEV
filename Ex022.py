@@ -1,5 +1,7 @@
+#Desafio:Crie um programa que leia o nome completo de uma pessoa e mostre:
+
 nome = input('Qual seu nome completo? ')
-# Nome em maiúculo
+# Nome em maiúsculo
 print(nome.upper())
 
 # Nome em minúsculo
