@@ -1,3 +1,7 @@
+#Desafio: Crie um programa que vai ler vários números e coloque em uma lista.
+# Depois disso crie duas listas extras que vão conter apenas os valores pares e os ímpares digitados, respectivamente.
+# No final, mostre o conteúdo das três listas geradas.
+
 num = list()
 numpar = list()
 numimpar = list()
