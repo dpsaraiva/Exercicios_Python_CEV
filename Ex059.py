@@ -1,3 +1,11 @@
+#Desafio: Crie um programa que leia dois valores e mostre um menu na tela:
+# [ 1 ] Somar
+# [ 2 ] Multiplicar
+# [ 3 ] Maior
+# [ 4 ] Novos numeros
+# [ 5 ] Sair do programa
+#Seu programa deverá realizar a operação solicitada em cada caso.
+
 oper = 0
 while oper == 0:
     print('=-=' * 15)
