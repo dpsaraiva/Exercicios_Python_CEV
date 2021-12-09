@@ -1,3 +1,6 @@
+#Desafio: Crie um programa que cria uma matriz de dimensão 3X3 3 preencha com valores lidos pelo teclado.
+# No final, mostre a matriz na tela, com a formatação correta.
+
 matriz = [[], [], []]
 for n in range(0, 3):
     for i in range(0, 3):
