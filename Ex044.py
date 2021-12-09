@@ -1,3 +1,9 @@
+#Desafio: Elabore um programa que calcule o valor a ser pago por um produto, considerando o seu preço normal e condição de pagamento:
+# à vista dinheiro/cheque: 10 % de desconto
+# a vista no cartao: 5% de desconto
+# em até 2X no cartao: preço normal
+# 3X ou mais no cartao: 20% de juros 
+
 preco = float(input('Qual o preço do produto? '))
 pagamento = int(input('Escolha a forma de pagamento:\n'
                             'Digite 1 para à vista dinheio/cheque;\n'
