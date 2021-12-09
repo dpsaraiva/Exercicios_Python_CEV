@@ -1,3 +1,6 @@
+#Desafio: Faça um programa que mostre a tabuada de vários númeoros, um de cada vez, para cada valor digitado pelo usúario.
+# O programa será interrompido quando o número solicitado for negativo. 
+
 while True:
     num = int(input('Quer ver a tabuada de qual valor? '))
     if num < 0:
