@@ -1,3 +1,5 @@
+#Desafio: Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo, desconsiderando os espaços.
+
 frase = input('Digite uma frase ou palavra: ').lower().replace(' ', '')
 frase2 = ''
 tamanho = len(frase)
