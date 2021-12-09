@@ -1,3 +1,6 @@
+#Desafio: Faça um mini-sistema que utiliza o interactive help do Python. O usuário vai digitar o comando e o manual vai aparecer.
+#Quando o usuário digitar a palavra FIM, o programa se encerrará. Obs: Use cores.
+
 from time import sleep
 c = ('\033[m',          # 0 - sem cor
      '\033[0;97;42m',   # 1 - fundo verde fonte branca
