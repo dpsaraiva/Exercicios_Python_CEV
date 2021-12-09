@@ -1,3 +1,6 @@
+#Desafio: Faça um programa que leia nome e média de um aluno, guardando também a situação em um dicionário.
+# No final, mostre o conteúdo da estrutura na tela.
+
 dados = dict()
 dados['nome'] = str(input('Nome do aluno: '))
 dados['media'] = float(input(f'Qual a sua média {dados["nome"]}: '))
